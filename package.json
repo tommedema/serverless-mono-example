@@ -6,5 +6,8 @@
   "repository": "git@github.com:tommedema/serverless-mono-example.git",
   "author": "Tom Medema <tommedema@gmail.com>",
   "license": "MIT",
-  "private": false
+  "private": true,
+  "workspaces": {
+    "packages": ["packages/*"]
+  }
 }

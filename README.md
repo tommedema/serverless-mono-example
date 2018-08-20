@@ -13,3 +13,10 @@ Example repo on how to use yarn workspaces together with the serverless framewor
 - Editor type safety: type safety works across the mono repo without having to compile
 - Root build: compile all package in an intelligent order based on a dependency graph from the mono repo root
 - Commit prettier + tslint: prettify and tslint code prior to commiting
+
+## ToDo
+
+- ~~init yarn workspaces root~~
+- init `random` library that fetches a random number async
+- init ts-node random test that tests random library
+- confirm that in-editor type safety works
