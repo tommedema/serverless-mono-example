@@ -18,6 +18,10 @@
     ramda "^0.25.0"
     source-map-support "^0.5.5"
 
+"@types/aws-lambda@^8.10.11":
+  version "8.10.11"
+  resolved "https://registry.yarnpkg.com/@types/aws-lambda/-/aws-lambda-8.10.11.tgz#2c51a7dacb1abf880d35778aca68ed1075d0b300"
+
 "@types/json5@^0.0.29":
   version "0.0.29"
   resolved "https://registry.yarnpkg.com/@types/json5/-/json5-0.0.29.tgz#ee28707ae94e11d2b827bcbe5270bcea7f3e71ee"

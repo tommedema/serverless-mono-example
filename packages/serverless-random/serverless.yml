@@ -1,0 +1,27 @@
+service: org-random
+    
+provider:
+  name: aws
+  stage: ${{opt:stage, 'dev'}}
+  region: ${{opt:region, 'us-east-1'}}
+  
+  # use ${{}} to access serverless variables
+  # this is necessary because cloudformation uses ${} syntax
+  variableSyntax: "\\${{([ ~:a-zA-Z0-9._\\'\",\\-\\/\\(\\)]+?)}}"
+      
+  stackTags:
+    SERVICE: ${{self:service}}
+    STAGE: ${{self:provider.stage}}
+    REGION: ${{self:provider.region}}
+    VERSION: ${{file(./package.json):version}}
+
+  runtime: nodejs8.10
+  memorySize: 256
+  timeout: 3
+
+functions:
+
+  transformOnBucketUpload:
+    handler: src/index.fetchRandomNumber
+    events:
+      - http: GET number

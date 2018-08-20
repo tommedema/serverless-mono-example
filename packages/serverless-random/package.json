@@ -6,6 +6,13 @@
   "author": "Tom Medema",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "build": "tsc -p ../../tsconfig.json"
+  },
+  "dependencies": {
+    "@types/aws-lambda": "^8.10.11",
+    "@types/node": "^10.7.1"
+  },
   "devDependencies": {
     "@types/mocha": "^5.2.5",
     "mocha": "^5.2.0",
