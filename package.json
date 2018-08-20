@@ -7,7 +7,15 @@
   "author": "Tom Medema <tommedema@gmail.com>",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "test": "yarn wsrun test"
+  },
   "workspaces": {
-    "packages": ["packages/*"]
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "devDependencies": {
+    "wsrun": "^2.2.1"
   }
 }
