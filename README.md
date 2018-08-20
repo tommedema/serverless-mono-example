@@ -11,7 +11,7 @@ Example repo on how to use yarn workspaces together with the serverless framewor
 - Root + pkg deploy: one command to deploy a serverless service in a package or to deploy all serverless services in the mono repo root
 - OK Package test without compilation: test packages using ts-node without having to compile
 - OK Root test without compilation: test all packages from the root folder
-- Editor type safety: type safety works across the mono repo without having to compile
+- OK Editor type safety: type safety works across the mono repo without having to compile
 - Root build: compile all package in an intelligent order based on a dependency graph from the mono repo root
 - Commit prettier + tslint: prettify and tslint code prior to commiting
 - In-editor tslint

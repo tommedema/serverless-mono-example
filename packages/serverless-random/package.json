@@ -1,0 +1,16 @@
+{
+  "name": "serverless-random",
+  "version": "1.0.0",
+  "description": "A serverless service that returns a random number.",
+  "main": "dist/index.js",
+  "author": "Tom Medema",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@types/mocha": "^5.2.5",
+    "mocha": "^5.2.0",
+    "serverless": "^1.30.1",
+    "tsconfig-paths": "^3.5.0",
+    "typescript": "^3.0.1"
+  }
+}
