@@ -1,0 +1,10 @@
+{
+  "name": "serverless-mono-example",
+  "version": "1.0.0",
+  "description": "Example repo on how to use yarn workspaces together with the serverless framework.",
+  "main": "index.js",
+  "repository": "git@github.com:tommedema/serverless-mono-example.git",
+  "author": "Tom Medema <tommedema@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
