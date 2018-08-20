@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "lib": [ 
+      "es6"
+    ],
+    "moduleResolution": "node",
+
+    "rootDir": "./",
+    "baseUrl": "packages/",
+    "paths": {
+      "@org/*": ["./*/src"]
+    },
+    
+    "composite": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+
+    "strict": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "noImplicitReturns": true,
+    "preserveConstEnums": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true
+  },
+  "exclude": [
+    "**/dist",
+    "**/node_modules",
+    "**/test"
+   ]
+}

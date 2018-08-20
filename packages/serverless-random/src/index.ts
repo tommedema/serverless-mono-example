@@ -1,4 +1,5 @@
 import { APIGatewayProxyEvent, APIGatewayEventRequestContext, APIGatewayProxyResult } from 'aws-lambda'
+import { fetchRandomNumber as fetchNumber } from '@org/random'
 
 export const fetchRandomNumber = async (
   event: APIGatewayProxyEvent,
@@ -10,7 +11,7 @@ export const fetchRandomNumber = async (
     context: ${JSON.stringify(context)}
   `)
 
-  const randomNr = Math.random()
+  const randomNr = await fetchNumber()
 
   console.log(`
     fetched number: ${randomNr}

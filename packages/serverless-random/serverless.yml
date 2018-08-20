@@ -36,6 +36,6 @@ custom:
 functions:
 
   fetchRandomNumber:
-    handler: dist/index.fetchRandomNumber
+    handler: dist/serverless-random/src/index.fetchRandomNumber
     events:
       - http: GET number

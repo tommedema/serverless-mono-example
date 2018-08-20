@@ -29,3 +29,8 @@ Example repo on how to use yarn workspaces together with the serverless framewor
 - make lambda depend on @org/random
 - have serverless artifact include mono dependencies
 - serverless unit test
+
+## References
+
+- https://blogs.msdn.microsoft.com/typescript/2018/07/30/announcing-typescript-3-0/#project-references
+- https://github.com/Soul-Master/typescript3-composite-project
