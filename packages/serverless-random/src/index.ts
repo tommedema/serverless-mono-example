@@ -1,9 +1,9 @@
-import { APIGatewayProxyEvent, APIGatewayEventRequestContext } from 'aws-lambda'
+import { APIGatewayProxyEvent, APIGatewayEventRequestContext, APIGatewayProxyResult } from 'aws-lambda'
 
 export const fetchRandomNumber = async (
   event: APIGatewayProxyEvent,
   context: APIGatewayEventRequestContext
-): Promise<{statusCode: number, randomNr: number}> => {
+): Promise<APIGatewayProxyResult> => {
   console.info(`
     fetchRandomNumber fired with:
     event: ${JSON.stringify(event)}
@@ -18,6 +18,6 @@ export const fetchRandomNumber = async (
 
   return {
     statusCode: 200,
-    randomNr
+    body: `${randomNr}`
   }
 }
