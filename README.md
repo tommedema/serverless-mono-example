@@ -5,10 +5,10 @@ Example repo on how to use yarn workspaces together with the serverless framewor
 ## Requirements
 
 - OK Typescript: all code is written in Typescript
-- Async lambda: the lamda exposes an async function to be run in node 8.10 on AWS
-- Supports non-serverless libs: packages can be pure libraries without serverless services. These libraries can be depended upon by serverless services, and should be packaged in the serverless artifact prior to being uploaded to AWS
+- OK Async lambda: the lamda exposes an async function to be run in node 8.10 on AWS
+- Mono repo packaging: mono repo packages can be depended upon by serverless services, and should be packaged in the serverless artifact prior to being uploaded to AWS
 - External typeroots: allows you to define types for external packages to be used throughout the mono-repo.
-- Pkg deploy: command to deploy a serverless service in a package
+- OK Pkg deploy: command to deploy a serverless service in a package
 - Root deploy: one command to deploy all serverless services in the mono repo root
 - OK Package test without compilation: test packages using ts-node without having to compile
 - OK Root test without compilation: test all packages from the root folder
@@ -23,10 +23,10 @@ Example repo on how to use yarn workspaces together with the serverless framewor
 - ~~init `random` library that fetches a random number async~~
 - ~~init ts-node random test that tests random library~~
 - ~~confirm that in-editor type safety works~~
-- build lambda typescript
+- ~~build lambda typescript~~
+- ~~create deploy script~~
+- ~~implement pkg deploy in lambda~~
+- implement root deploy
 - make lambda depend on @org/random
 - have serverless artifact include mono dependencies
-- create deploy script (build -> deploy-base)
-- implement pkg deploy in lambda
-- implement root deploy
 - serverless unit test

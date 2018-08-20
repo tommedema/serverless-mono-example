@@ -1,4 +1,13 @@
 service: org-random
+
+plugins:
+  - serverless-plugin-scripts
+
+package:
+  exclude:
+    - ./**
+  include:
+    - dist/**
     
 provider:
   name: aws
@@ -19,9 +28,14 @@ provider:
   memorySize: 256
   timeout: 3
 
+custom:
+  scripts:
+    hooks:
+      'before:deploy:createDeploymentArtifacts': yarn run build
+
 functions:
 
-  transformOnBucketUpload:
-    handler: src/index.fetchRandomNumber
+  fetchRandomNumber:
+    handler: dist/index.fetchRandomNumber
     events:
       - http: GET number
