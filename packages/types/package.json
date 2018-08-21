@@ -1,0 +1,6 @@
+{
+  "name": "@org/types",
+  "version": "1.0.0",
+  "description": "external type definitions",
+  "private": true
+}

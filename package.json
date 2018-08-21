@@ -17,12 +17,17 @@
   },
   "devDependencies": {
     "lerna": "^3.1.4",
+    "prettier": "^1.14.2",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.15.0",
     "typescript": "^3.0.1"
   },
   "scripts": {
     "build": "tsc -b .",
     "test": "lerna run test --",
     "deploy": "lerna run deploy --",
+    "lint": "tslint --fix --project tsconfig.json",
+    "prettier": "prettier --write --no-semi --single-quote",
     "clean": "yarn run clean-dist && yarn run clean-output && yarn run clean-logs",
     "clean-incl-deps": "yarn run clean && yarn run clean-deps",
     "clean-output": "rm -fr output && rm -fr */**/output",
