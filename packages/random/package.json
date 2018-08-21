@@ -1,5 +1,5 @@
 {
-  "name": "random",
+  "name": "@org/random",
   "version": "1.0.0",
   "description": "fetches a random number",
   "main": "dist/index.js",

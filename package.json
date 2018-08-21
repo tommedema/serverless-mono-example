@@ -10,6 +10,9 @@
   "workspaces": {
     "packages": [
       "packages/*"
+    ],
+    "nohoist": [
+      "**"
     ]
   },
   "devDependencies": {}

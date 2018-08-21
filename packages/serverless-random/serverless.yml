@@ -8,6 +8,7 @@ package:
     - ./**
   include:
     - dist/**
+    - node_modules/**
     
 provider:
   name: aws
@@ -36,6 +37,6 @@ custom:
 functions:
 
   fetchRandomNumber:
-    handler: dist/serverless-random/src/index.fetchRandomNumber
+    handler: dist/index.fetchRandomNumber
     events:
       - http: GET number
