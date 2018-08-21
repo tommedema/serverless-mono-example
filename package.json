@@ -35,7 +35,8 @@
     "clean-output": "rm -fr output && rm -fr */**/output",
     "clean-dist": "rm -fr packages/*/dist && rm -fr packages/*/.serverless",
     "clean-deps": "rm -fr node_modules && rm -fr packages/*/node_modules && rm -f yarn.lock && rm -fr */**/yarn.lock",
-    "clean-logs": "rm -f *.log && rm -fr */**/*.log"
+    "clean-logs": "rm -f *.log && rm -fr */**/*.log",
+    "precommit": "lint-staged"
   },
   "husky": {
     "hooks": {
