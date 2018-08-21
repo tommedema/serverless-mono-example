@@ -21,8 +21,10 @@ Example repo on how to use yarn workspaces together with the serverless framewor
 - OK Root test without compilation: test all packages from the root folder
 - OK Root deploy: one command to deploy all serverless services in the mono repo root based on dependency graph
 - OK External typeroots: allows you to define types for external packages to be used throughout the mono-repo
-- Commit prettier + tslint: prettify and tslint code prior to commiting
-- In-editor tslint
+- Prettier + lint package commands
+- Prettier + lint root command
+- Prettier + lint on commit
+- Lint in-editor
 
 ## Open issues (PRs welcome)
 
