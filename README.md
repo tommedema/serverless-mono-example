@@ -9,22 +9,47 @@ Example repo on how to use yarn workspaces together with the serverless framewor
 - Yarn Workspaces
 - Serverless Framework
 
-## Requirements
+## Features
 
-- OK Typescript: all code is written in Typescript
-- OK Async lambda: the lamda exposes an async function to be run in node 8.10 on AWS
-- OK Pkg deploy: command to deploy a serverless service in a package
-- OK Package test without compilation: test packages using ts-node without having to compile
-- OK Editor type safety: type safety works across the mono repo without having to compile
-- OK Mono repo packaging: mono repo packages can be depended upon by serverless services, and should be packaged in the serverless artifact prior to being uploaded to AWS
-- OK Root build: compile all package in an intelligent order based on a dependency graph from the mono repo root
-- OK Root test without compilation: test all packages from the root folder
-- OK Root deploy: one command to deploy all serverless services in the mono repo root based on dependency graph
-- OK External typeroots: allows you to define types for external packages to be used throughout the mono-repo
-- OK Lint in-editor (with tslint extension for visual studio code)
-- OK Prettier + lint root command
-- OK Prettier + lint on commit
-- Prettier + lint package commands
+- Typescript: all code is written in Typescript
+- Async lambda: the lamda exposes an async function to be run in node 8.10 on AWS
+- Pkg deploy: command to deploy a serverless service in a package
+- Package test without compilation: test packages using ts-node without having to compile
+- Editor type safety: type safety works across the mono repo without having to compile
+- Mono repo packaging: mono repo packages can be depended upon by serverless services, and should be packaged in the serverless artifact prior to being uploaded to AWS
+- Root build: compile all package in an intelligent order based on a dependency graph from the mono repo root
+- Root test without compilation: test all packages from the root folder
+- Root deploy: one command to deploy all serverless services in the mono repo root based on dependency graph
+- External typeroots: allows you to define types for external packages to be used throughout the mono-repo
+- Lint in-editor (with tslint extension for visual studio code)
+- Prettier + lint root command
+- Prettier + lint on commit
+
+### Adding a repo
+
+Simply create a new folder in `packages` and run `yarn init`. Prefix serverless services with the `sls-` prefix, such that their dependencies will not be hoisted (the serverless framework doesn't support hoisted packages at the moment). Ensure that the package has a local `tsconfig.json`. When your Typescript package depends on another typescript package within the mono repo, reference to it using the package's `tsconfig.json`.
+
+### Adding types for external packages
+
+If your external packages does not have types available from the DefinitelyTypes project (e.g. `@types/my-package`), you can easily define custom typings in the special `packages/types` package.
+
+### Running tests
+
+To run tests in all packages, run `yarn test` from the root folder.
+
+To run tests in a specific package, run `yarn test` from the package's folder.
+
+### Building
+
+To build all packages based on their dependency graph order, run `yarn build` from the root folder
+
+To build a specific package including the packages it references to, run `yarn build` from the package folder.
+
+### Deploying
+
+To deploy a serverless service, run `yarn deploy --stage=dev --aws-profile=profile-name` from the package folder. This will build the Typescript packages used by that serverless service.
+
+To deploy all serverless services, run the same command from the root folder.
 
 ## Open issues (PRs welcome)
 
