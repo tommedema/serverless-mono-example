@@ -3,8 +3,5 @@
   "compilerOptions": {
     "outDir": "dist",
     "rootDir": "src"
-  },
-  "references": [
-    { "path": "../types" }
-  ]
+  }
 }
