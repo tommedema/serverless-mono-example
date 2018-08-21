@@ -1,6 +1,13 @@
-# Serverless Mono Repo example
+# Serverless Mono Repo Typescript References example
 
-Example repo on how to use yarn workspaces together with the serverless framework.
+Example repo on how to use yarn workspaces together with the serverless framework. Utilizes [Typescript references](https://blogs.msdn.microsoft.com/typescript/2018/07/30/announcing-typescript-3-0/#project-references).
+
+## Stack
+
+- Typescript (with references)
+- Lerna
+- Yarn Workspaces
+- Serverless Framework
 
 ## Requirements
 
@@ -17,26 +24,7 @@ Example repo on how to use yarn workspaces together with the serverless framewor
 - External typeroots: allows you to define types for external packages to be used throughout the mono-repo
 - In-editor tslint
 
-## ToDo
-
-- ~~init yarn workspaces root~~
-- ~~init `random` library that fetches a random number async~~
-- ~~init ts-node random test that tests random library~~
-- ~~confirm that in-editor type safety works~~
-- ~~build lambda typescript~~
-- ~~create deploy script~~
-- ~~implement pkg deploy in lambda~~
-- ~~make lambda depend on @org/random~~
-- ~~have serverless artifact include mono dependencies~~
-- ~~serverless unit test~~
-- ~~root build~~
-- ~~root test~~
-- ~~root deploy~~
-- commit prettier + tslint
-- in-editor tslint
-- external typeroots
-
-## Issues taken for granted
+## Open issues (PRs welcome)
 
 - Serverless artifacts contain a few [redundant dependencies](https://github.com/serverless/serverless/pull/3889#issuecomment-414547166)
 - Yarn workspace hoisting is currently disabled for [serverless services](https://forum.serverless.com/t/using-serverless-with-yarn-workspaces/4560)
