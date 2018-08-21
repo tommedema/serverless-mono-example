@@ -26,9 +26,15 @@ Example repo on how to use yarn workspaces together with the serverless framewor
 - ~~build lambda typescript~~
 - ~~create deploy script~~
 - ~~implement pkg deploy in lambda~~
-- make lambda depend on @org/random
-- have serverless artifact include mono dependencies
+- ~~make lambda depend on @org/random~~
+- ~~have serverless artifact include mono dependencies~~
 - serverless unit test
+- external typeroots
+- root build
+- root test
+- root deploy
+- commit prettier + tslint
+- in-editor tslint
 
 ## Issues taken for granted
 
