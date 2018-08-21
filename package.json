@@ -12,7 +12,7 @@
       "packages/*"
     ],
     "nohoist": [
-      "**/serverless-random/**"
+      "**/serverless-*/**"
     ]
   },
   "devDependencies": {}

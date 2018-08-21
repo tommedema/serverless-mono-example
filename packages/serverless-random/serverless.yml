@@ -2,14 +2,6 @@ service: org-random
 
 plugins:
   - serverless-plugin-scripts
-
-# package:
-#   exclude:
-#     - ./**
-#   include:
-#     - dist/**
-#     - node_modules/**
-#     - '!node_modules/aws-sdk/**'
     
 provider:
   name: aws
