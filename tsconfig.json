@@ -1,7 +1,7 @@
 {
-  "files": [],
   "references": [
       { "path": "packages/random" },
-      { "path": "packages/sls-random" }
+      { "path": "packages/sls-random" },
+      { "path": "packages/types" },
   ]
 }

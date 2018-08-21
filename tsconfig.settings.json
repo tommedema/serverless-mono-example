@@ -12,6 +12,10 @@
     "paths": {
       "@org/*": ["./*/src"]
     },
+    "typeRoots": [
+      "./node_modules/@types",
+      "./packages/types"
+    ],
     
     "composite": true,
     "declaration": true,
