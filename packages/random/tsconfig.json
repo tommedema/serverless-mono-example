@@ -4,5 +4,7 @@
     "outDir": "dist",
     "rootDir": "src"
   },
-  "references": []
+  "references": [
+    { "path": "../types" }
+  ]
 }
