@@ -28,7 +28,7 @@ Example repo on how to use yarn workspaces together with the serverless framewor
 - ~~implement pkg deploy in lambda~~
 - ~~make lambda depend on @org/random~~
 - ~~have serverless artifact include mono dependencies~~
-- serverless unit test
+- ~~serverless unit test~~
 - external typeroots
 - root build
 - root test

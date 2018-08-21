@@ -27,7 +27,8 @@
     "preserveConstEnums": true,
     "suppressImplicitAnyIndexErrors": true,
     "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "esModuleInterop": true
   },
   "exclude": [
     "**/dist",
