@@ -10,11 +10,11 @@ Example repo on how to use yarn workspaces together with the serverless framewor
 - OK Package test without compilation: test packages using ts-node without having to compile
 - OK Editor type safety: type safety works across the mono repo without having to compile
 - OK Mono repo packaging: mono repo packages can be depended upon by serverless services, and should be packaged in the serverless artifact prior to being uploaded to AWS
-- External typeroots: allows you to define types for external packages to be used throughout the mono-repo
-- Root build: compile all package in an intelligent order based on a dependency graph from the mono repo root
-- Root test without compilation: test all packages from the root folder
-- Root deploy: one command to deploy all serverless services in the mono repo root based on dependency graph
+- OK Root build: compile all package in an intelligent order based on a dependency graph from the mono repo root
+- OK Root test without compilation: test all packages from the root folder
+- OK Root deploy: one command to deploy all serverless services in the mono repo root based on dependency graph
 - Commit prettier + tslint: prettify and tslint code prior to commiting
+- External typeroots: allows you to define types for external packages to be used throughout the mono-repo
 - In-editor tslint
 
 ## ToDo
@@ -31,7 +31,7 @@ Example repo on how to use yarn workspaces together with the serverless framewor
 - ~~serverless unit test~~
 - ~~root build~~
 - ~~root test~~
-- root deploy
+- ~~root deploy~~
 - commit prettier + tslint
 - in-editor tslint
 - external typeroots
