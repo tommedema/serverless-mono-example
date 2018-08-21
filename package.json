@@ -15,8 +15,13 @@
       "**/sls-*/**"
     ]
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "lerna": "^3.1.4",
+    "typescript": "^3.0.1"
+  },
   "scripts": {
+    "build": "tsc -b .",
+    "test": "lerna run test",
     "clean": "yarn run clean-dist && yarn run clean-output && yarn run clean-logs",
     "clean-incl-deps": "yarn run clean && yarn run clean-deps",
     "clean-output": "rm -fr output && rm -fr */**/output",

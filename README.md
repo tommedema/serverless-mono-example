@@ -29,12 +29,12 @@ Example repo on how to use yarn workspaces together with the serverless framewor
 - ~~make lambda depend on @org/random~~
 - ~~have serverless artifact include mono dependencies~~
 - ~~serverless unit test~~
-- external typeroots
-- root build
-- root test
+- ~~root build~~
+- ~~root test~~
 - root deploy
 - commit prettier + tslint
 - in-editor tslint
+- external typeroots
 
 ## Issues taken for granted
 
