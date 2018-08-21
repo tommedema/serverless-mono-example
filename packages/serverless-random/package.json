@@ -12,12 +12,12 @@
     "deploy": "serverless deploy"
   },
   "dependencies": {
-    "@types/aws-lambda": "^8.10.11",
-    "@types/node": "^10.7.1",
     "@org/random": "^1.0.0"
   },
   "devDependencies": {
     "@types/mocha": "^5.2.5",
+    "@types/aws-lambda": "^8.10.11",
+    "@types/node": "^10.7.1",
     "mocha": "^5.2.0",
     "serverless": "^1.30.1",
     "serverless-plugin-scripts": "^1.0.2",

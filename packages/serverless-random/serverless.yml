@@ -9,6 +9,7 @@ package:
   include:
     - dist/**
     - node_modules/**
+    - '!node_modules/aws-sdk/**'
     
 provider:
   name: aws
