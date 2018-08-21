@@ -2,6 +2,12 @@ service: org-random
 
 plugins:
   - serverless-plugin-scripts
+
+package:
+  exclude:
+    - ./**
+    - '!dist/**'
+    - '!node_modules/**'
     
 provider:
   name: aws
