@@ -16,7 +16,9 @@
     ]
   },
   "devDependencies": {
+    "husky": "^0.14.3",
     "lerna": "^3.1.4",
+    "lint-staged": "^7.2.2",
     "prettier": "^1.14.2",
     "tslint": "^5.11.0",
     "tslint-config-prettier": "^1.15.0",
@@ -34,5 +36,20 @@
     "clean-dist": "rm -fr packages/*/dist && rm -fr packages/*/.serverless",
     "clean-deps": "rm -fr node_modules && rm -fr packages/*/node_modules && rm -f yarn.lock && rm -fr */**/yarn.lock",
     "clean-logs": "rm -f *.log && rm -fr */**/*.log"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts,json,css,md}": [
+      "yarn run prettier",
+      "git add"
+    ],
+    "*.ts": [
+      "yarn run lint",
+      "git add"
+    ]
   }
 }

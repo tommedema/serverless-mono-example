@@ -23,8 +23,8 @@ Example repo on how to use yarn workspaces together with the serverless framewor
 - OK External typeroots: allows you to define types for external packages to be used throughout the mono-repo
 - OK Lint in-editor (with tslint extension for visual studio code)
 - OK Prettier + lint root command
-- Prettier + lint package commands
 - Prettier + lint on commit
+- Prettier + lint package commands
 
 ## Open issues (PRs welcome)
 
