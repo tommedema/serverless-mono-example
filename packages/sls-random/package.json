@@ -1,5 +1,5 @@
 {
-  "name": "serverless-random",
+  "name": "sls-random",
   "version": "1.0.0",
   "description": "A serverless service that returns a random number.",
   "main": "dist/index.js",

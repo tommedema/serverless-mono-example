@@ -12,8 +12,16 @@
       "packages/*"
     ],
     "nohoist": [
-      "**/serverless-*/**"
+      "**/sls-*/**"
     ]
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "scripts": {
+    "clean": "yarn run clean-dist && yarn run clean-output && yarn run clean-logs",
+    "clean-incl-deps": "yarn run clean && yarn run clean-deps",
+    "clean-output": "rm -fr output && rm -fr */**/output",
+    "clean-dist": "rm -fr packages/*/dist && rm -fr packages/*/.serverless",
+    "clean-deps": "rm -fr node_modules && rm -fr packages/*/node_modules && rm -f yarn.lock && rm -fr */**/yarn.lock",
+    "clean-logs": "rm -f *.log && rm -fr */**/*.log"
+  }
 }

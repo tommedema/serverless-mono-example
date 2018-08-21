@@ -2,6 +2,6 @@
   "files": [],
   "references": [
       { "path": "packages/random" },
-      { "path": "packages/serverless-random" }
+      { "path": "packages/sls-random" }
   ]
 }
