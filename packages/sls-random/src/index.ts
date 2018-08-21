@@ -24,7 +24,7 @@ export const fetchRandomNumber = async (
   `)
 
   return {
-    body: `Your number: ${randomNr}`,
+    body: `Your special number is: ${randomNr}`,
     statusCode: 200
   }
 }
