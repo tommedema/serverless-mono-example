@@ -10,8 +10,7 @@
     "build": "rm -fr dist && tsc -b .",
     "test": "mocha -r ts-node/register -r tsconfig-paths/register \"test/**/*.ts\"",
     "package": "serverless package",
-    "deploy": "yarn run test && yarn run deploy-base",
-    "deploy-base": "serverless deploy"
+    "deploy": "serverless deploy"
   },
   "dependencies": {
     "@org/random": "^1.0.0"

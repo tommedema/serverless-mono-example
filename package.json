@@ -21,7 +21,8 @@
   },
   "scripts": {
     "build": "tsc -b .",
-    "test": "lerna run test",
+    "test": "lerna run test --",
+    "deploy": "lerna run deploy --",
     "clean": "yarn run clean-dist && yarn run clean-output && yarn run clean-logs",
     "clean-incl-deps": "yarn run clean && yarn run clean-deps",
     "clean-output": "rm -fr output && rm -fr */**/output",
