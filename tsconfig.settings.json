@@ -2,9 +2,7 @@
   "compilerOptions": {
     "module": "commonjs",
     "target": "es6",
-    "lib": [ 
-      "es6"
-    ],
+    "lib": ["es6"],
     "moduleResolution": "node",
 
     "rootDir": "./",
@@ -12,11 +10,8 @@
     "paths": {
       "@org/*": ["./*/src"]
     },
-    "typeRoots": [
-      "./node_modules/@types",
-      "./packages/types"
-    ],
-    
+    "typeRoots": ["./node_modules/@types", "./packages/types"],
+
     "composite": true,
     "declaration": true,
     "declarationMap": true,
@@ -34,9 +29,5 @@
     "resolveJsonModule": true,
     "esModuleInterop": true
   },
-  "exclude": [
-    "**/dist",
-    "**/node_modules",
-    "**/test"
-   ]
+  "exclude": ["**/dist", "**/node_modules", "**/prod_node_modules", "**/test"]
 }

@@ -4,10 +4,7 @@ plugins:
   - serverless-plugin-scripts
 
 package:
-  exclude:
-    - ./**
-    - '!dist/**'
-    - '!node_modules/**'
+  artifact: dist/artifact.zip
     
 provider:
   name: aws
@@ -31,11 +28,11 @@ provider:
 custom:
   scripts:
     hooks:
-      'before:deploy:createDeploymentArtifacts': yarn run build
+      'before:deploy:createDeploymentArtifacts': yarn run build && ../../scripts/sls-package.sh
 
 functions:
 
   fetchRandomNumber:
-    handler: dist/index.fetchRandomNumber
+    handler: index.fetchRandomNumber
     events:
       - http: GET number
