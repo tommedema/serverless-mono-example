@@ -53,7 +53,7 @@ To deploy all serverless services, run the same command from the root folder.
 
 ## Open issues (PRs welcome)
 
-- Serverless artifacts contain a few [redundant dependencies](https://github.com/serverless/serverless/pull/3889#issuecomment-414547166), presumably due to a bug in Serverless Framework's [exclude dev dependencies logic](https://github.com/serverless/serverless/blob/643c4fdd7e9c7bfd7a81c4be81a23cffd4be3113/lib/plugins/package/lib/zipService.js#L145)
+- Serverless artifacts contain a few [redundant dependencies](https://github.com/serverless/serverless/pull/3889#issuecomment-414547166), presumably due to a bug in Serverless Framework's [exclude dev dependencies logic](https://github.com/serverless/serverless/blob/643c4fdd7e9c7bfd7a81c4be81a23cffd4be3113/lib/plugins/package/lib/zipService.js#L145). There is an initiative to create the [artifact manually](https://github.com/tommedema/serverless-mono-example/commit/e0f97a081f35b181d55a2523cb583168e685698d) using `yarn install --production`, but this is a slow process and is therefore not yet integrated into the master branch.
 - Yarn workspace hoisting is currently disabled for [serverless services](https://forum.serverless.com/t/using-serverless-with-yarn-workspaces/4560)
 
 ## References
