@@ -7,7 +7,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "build": "rm -fr dist && tsc -b .",
+    "build": "tsc -b .",
     "test": "mocha -r ts-node/register -r tsconfig-paths/register \"test/**/*.ts\"",
     "package": "serverless package",
     "deploy": "serverless deploy"

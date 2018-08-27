@@ -7,7 +7,7 @@
   "private": true,
   "scripts": {
     "test": "mocha -r ts-node/register -r tsconfig-paths/register \"test/**/*.ts\"",
-    "build": "rm -fr dist && tsc -b ."
+    "build": "tsc -b ."
   },
   "devDependencies": {
     "@types/mocha": "^5.2.5",
