@@ -25,11 +25,11 @@
     "typescript": "^3.0.1"
   },
   "scripts": {
-    "build": "tsc -b packages",
-    "watch": "tsc -b packages -w",
+    "build": "tsc -b ./packages",
+    "watch": "tsc -w -b ./packages",
     "test": "lerna run test --",
     "deploy": "lerna run deploy --",
-    "lint": "tslint --fix --project tsconfig.json",
+    "lint": "tslint --fix --project ./packages/tsconfig.lint.json",
     "prettier": "prettier --write --no-semi --single-quote",
     "clean": "yarn run clean-dist && yarn run clean-output && yarn run clean-logs",
     "clean-incl-deps": "yarn run clean && yarn run clean-deps",

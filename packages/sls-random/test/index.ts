@@ -1,6 +1,7 @@
-import { fetchRandomNumber } from '../src'
 import { APIGatewayEventRequestContext, APIGatewayProxyEvent } from 'aws-lambda'
+import { fetchRandomNumber } from '../src'
 
+// tslint:disable: no-var-requires
 const context = require('./mocks/context.json') as APIGatewayEventRequestContext
 const event = require('./mocks/event.json') as APIGatewayProxyEvent
 
