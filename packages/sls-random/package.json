@@ -13,13 +13,13 @@
     "deploy": "serverless deploy"
   },
   "dependencies": {
-    "@org/random": "^1.0.0"
+    "@org/random": "^1.0.0",
+    "aws-lambda": "^0.1.2"
   },
   "devDependencies": {
     "@types/aws-lambda": "^8.10.11",
     "@types/mocha": "^5.2.5",
     "@types/node": "^10.7.1",
-    "aws-lambda": "^0.1.2",
     "mocha": "^5.2.0",
     "serverless": "^1.30.1",
     "serverless-plugin-scripts": "^1.0.2",
