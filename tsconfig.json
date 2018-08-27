@@ -1,8 +1,7 @@
 {
   "extends": "./tsconfig.settings.json",
   "references": [
-      { "path": "packages/random" },
-      { "path": "packages/sls-random" },
-      { "path": "packages/types" },
+    { "path": "packages/random" },
+    { "path": "packages/sls-random" }
   ]
 }
