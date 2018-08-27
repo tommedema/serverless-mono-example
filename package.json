@@ -26,6 +26,7 @@
   },
   "scripts": {
     "build": "tsc -b packages",
+    "watch": "tsc -b packages -w",
     "test": "lerna run test --",
     "deploy": "lerna run deploy --",
     "lint": "tslint --fix --project tsconfig.json",

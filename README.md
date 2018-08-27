@@ -15,7 +15,6 @@ Example repo on how to use yarn workspaces together with the serverless framewor
 - Async lambda: the lamda exposes an async function to be run in node 8.10 on AWS
 - Pkg deploy: command to deploy a serverless service in a package
 - Package test without compilation: test packages using ts-node without having to compile
-- Editor type safety: type safety works across the mono repo without having to compile
 - Mono repo packaging: mono repo packages can be depended upon by serverless services, and should be packaged in the serverless artifact prior to being uploaded to AWS
 - Root build: compile all package in an intelligent order based on a dependency graph from the mono repo root
 - Root test without compilation: test all packages from the root folder
@@ -53,6 +52,7 @@ To deploy all serverless services, run the same command from the root folder.
 
 ## Open issues (PRs welcome)
 
+- Editor type safety: "on the fly" type safety without compilation does not yet work across the mono repo, see this [vscode issue](https://github.com/Microsoft/vscode/issues/57242). Note that it seems to [partially](https://github.com/tommedema/serverless-mono-example/issues/4#issuecomment-416328781) work in WebStorm.
 - Serverless artifacts contain a few [redundant dependencies](https://github.com/serverless/serverless/pull/3889#issuecomment-414547166), presumably due to a bug in Serverless Framework's [exclude dev dependencies logic](https://github.com/serverless/serverless/blob/643c4fdd7e9c7bfd7a81c4be81a23cffd4be3113/lib/plugins/package/lib/zipService.js#L145). There is an initiative to create the [artifact manually](https://github.com/tommedema/serverless-mono-example/commit/e0f97a081f35b181d55a2523cb583168e685698d) using `yarn install --production`, but this is a slow process and is therefore not yet integrated into the master branch.
 - Yarn workspace hoisting is currently disabled for [serverless services](https://forum.serverless.com/t/using-serverless-with-yarn-workspaces/4560)
 
