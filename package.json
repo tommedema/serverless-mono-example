@@ -22,10 +22,10 @@
     "prettier": "^1.14.2",
     "tslint": "^5.11.0",
     "tslint-config-prettier": "^1.15.0",
-    "typescript": "^3.1.0-dev.20180825"
+    "typescript": "^3.0.1"
   },
   "scripts": {
-    "build": "tsc -b .",
+    "build": "tsc -b packages",
     "test": "lerna run test --",
     "deploy": "lerna run deploy --",
     "lint": "tslint --fix --project tsconfig.json",

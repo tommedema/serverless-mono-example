@@ -1,0 +1,4 @@
+{
+  "files": [],
+  "references": [{ "path": "./random" }, { "path": "./sls-random" }]
+}
