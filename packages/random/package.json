@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "fetches a random number",
   "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "license": "MIT",
   "private": true,
   "scripts": {
